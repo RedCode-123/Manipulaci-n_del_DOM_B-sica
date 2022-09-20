@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de dos números</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html {
+            font-size: x-small;
+        }
+        section form {
+            padding: 1rem;
+            width: 100vw;
+            display: flex;
+            flex-flow: column;
+            place-items: center;
+            row-gap: 1rem;
+        }
+        section input,
+        section button
+        {
+            width: 20rem;
+            font-size: 1.2rem;
+        }
+        section input:hover {
+            outline: none;
+            border: .1rem solid cyan;
+        }
+        section input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+        <h1>Suma de dos números</h1>
+        <input type="text" class="value1">
+        <input type="text" class="value2">
+        <!-- Se le pone el type="button" porque el form cambia al último botón a type="submit" -->
+        <button type="button" class="send1">Resultado</button>
+        <span class="result"></span>
+        </form>
+    </section>
+<script src="./script.js"></script>
+</body>
+</html>
